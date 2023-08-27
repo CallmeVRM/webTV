@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=webtv
-Exec=sh /home/baibao/Desktop/webtv.sh
+Exec=sh /home/user/Desktop/webtv.sh
