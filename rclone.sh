@@ -1,10 +1,10 @@
 #!/bin/bash
 #Paramètres pour rclone et VLC
-RCLONE_REMOTE_NAME="webTVAston"
+RCLONE_REMOTE_NAME="webTV"
 RCLONE_REMOTE_PATH="videos"
-LOCAL_PATH="/home/baibao/Downloads"
+LOCAL_PATH="/home/user/Downloads"
 #Synchroniser le dossier avec rclone
-echo "Starting Rclone" >> /home/baibao/Desktop/logfile.txt
+echo "Starting Rclone" >> /home/user/Desktop/logfile.txt
 rclone sync "$RCLONE_REMOTE_NAME:$RCLONE_REMOTE_PATH" "$LOCAL_PATH"
 pkill mpv -x
-export DISPLAY=:0 && mpv -fs -loop 0 /home/baibao/Downloads/video.mp4
+export DISPLAY=:0 && mpv -fs -loop 0 /home/user/Downloads/video.mp4
